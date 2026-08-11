@@ -50,7 +50,7 @@ export default function Home() {
                 onClick={() => setShowOfficeModal(true)}
               >
                 <img
-                  src="/MJP-Photo.png"
+                  src="/SocietyPhoto/MJP-Photo.png"
                   alt="MJP Society Accounts & Consultancy Main Office"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
@@ -442,7 +442,7 @@ export default function Home() {
           >
             <div className="relative bg-slate-900 flex items-center justify-center min-h-[350px] max-h-[75vh]">
               <img
-                src="/MJP-Photo.png"
+                src="/SocietyPhoto/MJP-Photo.png"
                 alt="MJP Society Accounts & Consultancy Main Office Premises"
                 className="max-h-[75vh] w-full object-contain"
               />

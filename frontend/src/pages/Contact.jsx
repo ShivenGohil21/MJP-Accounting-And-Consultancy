@@ -15,6 +15,7 @@ export default function Contact() {
   });
   const [submitting, setSubmitting] = useState(false);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const [showOfficeModal, setShowOfficeModal] = useState(false);
   const [openFaq, setOpenFaq] = useState(null);
 
   const serviceOptions = [
@@ -362,6 +363,28 @@ Submitted via MJP Portfolio Portal`;
               </div>
             </div>
 
+            {/* Office Premises Photo Card */}
+            <div className="bg-white rounded-xl border border-outline-variant p-4 card-shadow space-y-3">
+              <div
+                className="h-48 rounded-lg overflow-hidden relative group cursor-pointer border border-outline-variant/30"
+                onClick={() => setShowOfficeModal(true)}
+              >
+                <img
+                  src="/SocietyPhoto/MJP-Photo.png"
+                  alt="MJP Society Accounts Consultancy Administrative Office Premises"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
+                <div className="absolute bottom-3 left-3 right-3 text-white space-y-0.5">
+                  <span className="text-[10px] font-bold uppercase tracking-widest bg-tertiary px-2 py-0.5 rounded text-white inline-block">
+                    Office Premises
+                  </span>
+                  <p className="text-xs font-bold leading-tight">Lower Ground 37/38, Xth Central Mall</p>
+                  <p className="text-[10px] text-white/80">Kandivali (W), Mahavir Nagar, Mumbai</p>
+                </div>
+              </div>
+            </div>
+
             {/* Map Frame Card */}
             <div className="relative h-64 md:h-80 bg-surface-variant rounded-xl border-4 border-white shadow-xl group overflow-hidden">
               <iframe
@@ -382,6 +405,44 @@ Submitted via MJP Portfolio Portal`;
                 </p>
               </div>
             </div>
+
+            {/* Office Lightbox Modal */}
+            {showOfficeModal && (
+              <div
+                className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4"
+                onClick={() => setShowOfficeModal(false)}
+              >
+                <div
+                  className="bg-white rounded-2xl max-w-4xl w-full overflow-hidden shadow-2xl space-y-0 relative animate-in fade-in zoom-in-95 duration-200"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <div className="relative bg-slate-900 flex items-center justify-center min-h-[350px] max-h-[75vh]">
+                    <img
+                      src="/SocietyPhoto/MJP-Photo.png"
+                      alt="MJP Society Accounts Consultancy Main Office Premises"
+                      className="max-h-[75vh] w-full object-contain"
+                    />
+                    <button
+                      onClick={() => setShowOfficeModal(false)}
+                      className="absolute top-4 right-4 bg-black/60 hover:bg-black text-white p-2 rounded-full backdrop-blur-md transition-colors"
+                    >
+                      <X size={20} />
+                    </button>
+                  </div>
+                  <div className="p-6 bg-white flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                    <div>
+                      <h3 className="text-xl font-bold text-primary">MJP Society Accounts &amp; Consultancy</h3>
+                      <p className="text-xs text-secondary mt-1">
+                        Lower Ground 37/38, Xth Central Mall, next to DMart, Kandivali (W), Mahavir Nagar, Mumbai 400067
+                      </p>
+                    </div>
+                    <span className="text-xs font-bold text-tertiary bg-tertiary/10 px-3 py-1 rounded-full uppercase tracking-wider">
+                      Administrative Office
+                    </span>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
 
