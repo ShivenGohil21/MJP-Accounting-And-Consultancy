@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ModernHearth | Architectural Permanence &amp; Communal Warmth</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#2e3152", // Navy
+                        "on-primary": "#ffffff",
+                        "primary-container": "#e0e1eb",
+                        "on-primary-container": "#1a1c32",
+                        "secondary": "#ba1a1a", // Red Accent
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#ffdad6",
+                        "on-secondary-container": "#410002",
+                        "tertiary": "#525e7d",
+                        "on-tertiary": "#ffffff",
+                        "background": "#f7f9fb",
+                        "on-background": "#1a1c1e",
+                        "surface": "#f7f9fb",
+                        "on-surface": "#1a1c1e",
+                        "surface-variant": "#e1e2ec",
+                        "on-surface-variant": "#44474f",
+                        "outline": "#75777f",
+                        "outline-variant": "#c4c6d0",
+                        "surface-container-low": "#f2f4f6",
+                        "surface-container": "#f7f9fb",
+                        "surface-container-high": "#e8eaed",
+                        "surface-container-highest": "#d8dadc",
+                        "error": "#ba1a1a",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "base": "8px",
+                        "container-max": "1280px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Public Sans", "sans-serif"],
+                        "headline-lg": ["Public Sans", "sans-serif"],
+                        "headline-md": ["Public Sans", "sans-serif"],
+                        "headline-xl": ["Public Sans", "sans-serif"],
+                        "label-md": ["Public Sans", "sans-serif"],
+                        "label-sm": ["Public Sans", "sans-serif"],
+                        "body-lg": ["Public Sans", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            vertical-align: middle;
+        }
+        body {
+            background: linear-gradient(180deg, #f7f9fb 0%, #e0e7f1 100%);
+            background-attachment: fixed;
+        }
+        .nav-underline {
+            position: relative;
+        }
+        .nav-underline::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #ba1a1a;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        .nav-underline:hover::after, .nav-underline.active::after {
+            transform: scaleX(1);
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="bg-surface/80 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant w-full">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<div class="font-headline-md text-headline-md font-bold text-primary tracking-tight">ModernHearth</div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-10">
+<a class="font-label-md text-label-md text-primary nav-underline active" href="#">Our Homes</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors nav-underline" href="#">Community</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors nav-underline" href="#">Governance</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors nav-underline" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="px-6 py-3 bg-primary text-on-primary font-label-md text-label-md rounded-DEFAULT hover:opacity-90 transition-all shadow-md active:scale-95">
+                    Resident Portal
+                </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[85vh] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-center bg-cover" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCx69DIU3YU2DVX-Z1zAe7TF6KUI7KNhCfgrO7qmE4j7he5kTXeuJ2a8MDaW_kTFIovm1uk_6nrXN-THG9Zqm32BkvgySZPuxuLl7d-wTGfJjYXYa5N2RRYNM5UP9hxYK4HyRgD8EhDwEvW816xEwT7xXnKhgeJz8gl6hLKotm7__qKz0f5QvNESB1RurkkHq152b0prH26alxgyqSA9wmlzuPCAtF3-aj5ggDGT9oKJf2Zjy_iyx1oZQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/90 to-transparent"></div>
+</div>
+<div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<div class="max-w-2xl">
+<span class="font-label-md text-label-md text-secondary tracking-widest uppercase block mb-4">Living Reimagined</span>
+<h1 class="font-headline-xl text-headline-xl text-primary mb-6 leading-tight">Architecture for Permanence, Spaces for Connection.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">
+                        ModernHearth is a cooperative society dedicated to creating high-quality, sustainable living environments that foster genuine human interaction and long-term stability.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="px-8 py-4 bg-secondary text-on-secondary font-label-md text-label-md rounded-DEFAULT hover:shadow-lg transition-all flex items-center gap-2">
+                            Explore Homes <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="px-8 py-4 border border-outline text-primary font-label-md text-label-md rounded-DEFAULT hover:bg-surface-container-high transition-all">
+                            Our Philosophy
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Community Values: Bento Layout -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<div class="mb-16 text-center max-w-3xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">The Pillars of Our Hearth</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">We believe that a home is more than four walls; it is the foundation of a thriving, democratic community.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Value 1 -->
+<div class="md:col-span-8 bg-surface-container-lowest border border-outline-variant p-10 flex flex-col justify-between group overflow-hidden relative rounded-lg">
+<div class="relative z-10">
+<div class="w-12 h-12 bg-primary text-on-primary flex items-center justify-center mb-6 rounded-DEFAULT">
+<span class="material-symbols-outlined">diversity_3</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Shared Ownership</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">Transparency and equity are at the heart of our governance. Every resident is an equal stakeholder in the society's future.</p>
+</div>
+<div class="absolute right-[-5%] bottom-[-5%] opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined !text-[200px]">handshake</span>
+</div>
+</div>
+<!-- Value 2 -->
+<div class="md:col-span-4 bg-primary text-on-primary p-10 flex flex-col justify-between rounded-lg shadow-xl">
+<div>
+<div class="w-12 h-12 bg-on-primary/10 flex items-center justify-center mb-6 rounded-DEFAULT">
+<span class="material-symbols-outlined">eco</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4">Sustainable Design</h3>
+<p class="font-body-md text-body-md opacity-80">Passive solar heating, rainwater harvesting, and low-impact materials come standard in every project.</p>
+</div>
+</div>
+<!-- Value 3 -->
+<div class="md:col-span-4 bg-surface-container-lowest border border-outline-variant p-10 flex flex-col justify-between rounded-lg">
+<div>
+<div class="w-12 h-12 bg-secondary-container text-on-secondary-container flex items-center justify-center mb-6 rounded-DEFAULT">
+<span class="material-symbols-outlined">encrypted</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Stability</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Predictable long-term costs and security of tenure that traditional renting can't match.</p>
+</div>
+</div>
+<!-- Value 4 -->
+<div class="md:col-span-8 bg-surface-container-high p-10 flex flex-col md:flex-row gap-10 items-center rounded-lg">
+<div class="flex-1">
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Communal Spaces</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">From rooftop gardens to professional co-working hubs, our spaces are designed to connect neighbors.</p>
+</div>
+<div class="flex-1 w-full h-48 bg-white border border-outline-variant relative overflow-hidden rounded-lg">
+<div class="w-full h-full bg-center bg-cover" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA5ybBy4zJwaAKyLszJj9kTZ8MkFetAPHvG7dBj0gjSo00Ztu6uMUME3JcbG61me32ZAf_RhqhKPhYXs0FpClZAMji4R1w4ZlbG_qkgLzaCU4m7V9KbsTmEI5l_nP9Rvqy6vAByBe0vobiJIBbAw0jvp0kYb62MMWkPMR-gaQ5F-Mfzi7tUG0udMiLCfvPNG3JJnsnb1ybeIK_YCy9iMjMdR7QGVNC0pinzyYbzk3oQZ6EXOtQIpWxNKQ')"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Available Homes -->
+<section class="py-24 bg-primary-container/30">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-2">Available Homes</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Limited memberships currently open in our latest developments.</p>
+</div>
+<div class="hidden md:flex gap-4">
+<button class="w-12 h-12 border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all rounded-DEFAULT"><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="w-12 h-12 border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all rounded-DEFAULT"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Home 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-container-highest overflow-hidden mb-6 relative rounded-lg">
+<div class="w-full h-full bg-center bg-cover group-hover:scale-105 transition-transform duration-700" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCLZIzzXFIIPgJ5420_f5hEN2zYLdVleJjwR8H6dPeZd1GSejomVt-j3eqkGgrnjPtIPeAbo7_YKM7HP8zw5zsIa4FsMpDyZ1ez5KqarwwFj31t14X0YAnfbe_fB6Nh2IWe1bQDxq-y3RmlRg9Nr_-VfqsbHho5h_EMciJz582_gEgYcysejw_3wvwZsYCKAyfedk7pxs098RQctz9e8JPnDXR8AlNPuw_8M3wWymQ8AQN21Mo6ReM9EQ')"></div>
+<div class="absolute top-4 left-4 bg-secondary text-on-secondary px-3 py-1 font-label-sm text-label-sm rounded-sm">Active Project</div>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">The Atrium Flats</h4>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md mt-2">
+<span class="material-symbols-outlined !text-sm text-secondary">location_on</span> Oslo, Norway
+                        </div>
+<div class="mt-4 flex justify-between items-center border-t border-outline-variant pt-4">
+<span class="font-body-md text-body-md font-semibold text-primary">From €420k</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">2 Units Left</span>
+</div>
+</div>
+<!-- Home 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-container-highest overflow-hidden mb-6 relative rounded-lg">
+<div class="w-full h-full bg-center bg-cover group-hover:scale-105 transition-transform duration-700" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCzs9kIL84srM2FdreOPKVGKWUZ5nE1jf5nOefJwNNyRpHylAK-a5ZhCKXvKrPNPgRnhG0eVWLYEguPfu5dFn156V3H9OLrjBWDj2kbqZ4xs795ZBk4xzOBj7SjtHhP15lgB6iFewa8_huVCQk1B3Y_o48tl-g7zspMxN3IqO8X2Rs8zhIDyIzW8tktU-fS3FvN8U3bbeRW7sYeJYsZLAf9zISDh1CCZEKTTbho2G4nElzTjOgrXcuvxA')"></div>
+<div class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 font-label-sm text-label-sm rounded-sm">Under Construction</div>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Pine Terrace Rows</h4>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md mt-2">
+<span class="material-symbols-outlined !text-sm text-secondary">location_on</span> Stockholm, Sweden
+                        </div>
+<div class="mt-4 flex justify-between items-center border-t border-outline-variant pt-4">
+<span class="font-body-md text-body-md font-semibold text-primary">From €385k</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Member Waitlist</span>
+</div>
+</div>
+<!-- Home 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-container-highest overflow-hidden mb-6 relative rounded-lg">
+<div class="w-full h-full bg-center bg-cover group-hover:scale-105 transition-transform duration-700" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBkOyH919LFS2bNXgXMvuxVnJaZf8P9o8arekdi4ZOJD4v_a7rUnndTuaV_Mohjz9v_Pofey2uevmGUk4_GJCZ50A2JSa0a46ZIEq8Os2OnIRg75ddPnxP5mw1w0nsj1aEuSPsqmHDwpuEqeNMfZZN16qlfRGIp3ppDg-1A6_mgUaLje0UZp158EpF-wJHpl4YZQbmjBVAtILb8wf2JBTm0__Y0kbsgX6j0QId9jcrqQFX0Szm0jrtu5g')"></div>
+<div class="absolute top-4 left-4 bg-outline text-on-primary px-3 py-1 font-label-sm text-label-sm rounded-sm">Completed</div>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Zenith Heights</h4>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md mt-2">
+<span class="material-symbols-outlined !text-sm text-secondary">location_on</span> Copenhagen, Denmark
+                        </div>
+<div class="mt-4 flex justify-between items-center border-t border-outline-variant pt-4">
+<span class="font-body-md text-body-md font-semibold text-primary">Resale Only</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Highly Desired</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Governance & Updates -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+<div class="lg:col-span-1">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Governance Transparency</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                        ModernHearth operates on a model of total transparency. Our residents are active participants in every major decision, from aesthetic changes to financial management.
+                    </p>
+<a class="flex items-center gap-2 text-secondary font-label-md text-label-md group" href="#">
+                        View Society Bylaws 
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</a>
+</div>
+<div class="lg:col-span-2">
+<div class="space-y-0 border-t border-outline-variant">
+<!-- Update Row 1 -->
+<div class="py-8 border-b border-outline-variant flex flex-col md:flex-row md:items-center justify-between group hover:bg-surface-container transition-colors cursor-pointer px-4 rounded-lg">
+<div class="mb-4 md:mb-0">
+<span class="px-2 py-1 bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase mb-3 inline-block rounded-sm">Meeting Update</span>
+<h4 class="font-headline-md text-headline-md text-primary">Q3 General Assembly Results</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Voting outcome on the new solar installation for the Oslo complex.</p>
+</div>
+<div class="flex items-center gap-6">
+<span class="font-label-md text-label-md text-on-surface-variant">Oct 12, 2023</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-opacity">download</span>
+</div>
+</div>
+<!-- Update Row 2 -->
+<div class="py-8 border-b border-outline-variant flex flex-col md:flex-row md:items-center justify-between group hover:bg-surface-container transition-colors cursor-pointer px-4 rounded-lg">
+<div class="mb-4 md:mb-0">
+<span class="px-2 py-1 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase mb-3 inline-block rounded-sm">Financial</span>
+<h4 class="font-headline-md text-headline-md text-primary">2023 Annual Treasury Report</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Summary of maintenance funds and reinvestment yields.</p>
+</div>
+<div class="flex items-center gap-6">
+<span class="font-label-md text-label-md text-on-surface-variant">Sep 28, 2023</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-opacity">download</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA -->
+<section class="bg-primary text-on-primary py-24 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-secondary"></div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full text-center relative z-10">
+<h2 class="font-headline-lg text-headline-lg mb-6">Join the Future of Living</h2>
+<p class="font-body-lg text-body-lg opacity-80 mb-10 max-w-xl mx-auto">Subscribe to receive notifications about new developments and membership openings.</p>
+<form class="flex flex-col md:flex-row gap-4 max-w-md mx-auto" onsubmit="event.preventDefault();">
+<input class="flex-1 bg-on-primary/10 border border-on-primary/30 px-6 py-4 text-white focus:border-on-primary focus:ring-0 outline-none placeholder:text-on-primary/50 rounded-DEFAULT" placeholder="Enter your email" type="email"/>
+<button class="bg-secondary text-on-secondary px-8 py-4 font-label-md text-label-md hover:bg-secondary/90 transition-all rounded-DEFAULT shadow-lg">Subscribe</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest/50 py-16 w-full border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<div class="flex flex-col gap-6">
+<div class="font-headline-md text-headline-md font-bold text-primary">ModernHearth</div>
+<p class="text-on-surface-variant max-w-xs font-body-md text-body-md">Creating resilient, architectural housing solutions for the modern era.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-outline flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#"><span class="material-symbols-outlined !text-base">share</span></a>
+<a class="w-10 h-10 rounded-full border border-outline flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#"><span class="material-symbols-outlined !text-base">mail</span></a>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-label-md text-label-md text-primary uppercase">Quick Links</h5>
+<nav class="flex flex-col gap-2">
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md" href="#">Membership</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md" href="#">Bylaws</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md" href="#">Privacy Policy</a>
+</nav>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-label-md text-label-md text-primary uppercase">Contact</h5>
+<p class="text-on-surface-variant font-body-md">124 Hearthway Blvd,<br/>Modern District, Oslo</p>
+<p class="text-primary font-body-md font-semibold mt-2">+47 22 33 44 55</p>
+<p class="text-on-surface-variant font-body-md">contact@modernhearth.coop</p>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-outline-variant px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-on-surface-variant font-label-sm text-label-sm">© 2024 ModernHearth Cooperative Society. All rights reserved.</p>
+<div class="flex gap-6">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Architecture: Azure Professionalism Labs</span>
+</div>
+</div>
+</footer>
+<script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-8');
+            observer.observe(el);
+        });
+    </script>
+</body></html>

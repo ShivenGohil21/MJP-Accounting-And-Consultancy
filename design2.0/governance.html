@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Governance &amp; Transparency | ModernHearth</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+              "primary": "#2e3152", // Navy from design system
+              "on-primary": "#ffffff",
+              "secondary": "#5a5d7e",
+              "accent-coral": "#e65a5a", // Inspired by the reference image red/coral
+              "surface": "#f7f9fb",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-low": "#f2f4f6",
+              "surface-container": "#eef1f4",
+              "surface-container-high": "#e8ebf0",
+              "surface-container-highest": "#e2e6eb",
+              "outline": "#74777f",
+              "outline-variant": "#c4c6cf",
+              "on-surface": "#1a1c1e",
+              "on-surface-variant": "#44474e"
+            },
+            "borderRadius": {
+              "DEFAULT": "4px",
+              "lg": "8px",
+              "xl": "12px",
+              "full": "9999px"
+            },
+            "spacing": {
+              "gutter": "24px",
+              "base": "8px",
+              "container-max": "1280px",
+              "margin-desktop": "64px",
+              "margin-mobile": "20px"
+            },
+            "fontFamily": {
+              "body-md": ["Public Sans", "sans-serif"],
+              "label-md": ["Public Sans", "sans-serif"],
+              "headline-md": ["Public Sans", "sans-serif"],
+              "headline-xl": ["Public Sans", "sans-serif"],
+              "headline-lg": ["Public Sans", "sans-serif"]
+            },
+            "backgroundImage": {
+              "light-blue-gradient": "linear-gradient(180deg, #d8ebf9 0%, #f7f9fb 100%)"
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .tonal-layer-1 {
+            background-color: #ffffff;
+            border: 1px solid #c4c6cf;
+        }
+        .smooth-shadow:hover {
+            box-shadow: 0 4px 20px rgba(46, 49, 82, 0.08);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .accent-border-top {
+            border-top: 3px solid #e65a5a;
+        }
+    </style>
+</head>
+<body class="bg-light-blue-gradient text-on-surface font-body-md min-h-screen overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<nav class="bg-surface/90 backdrop-blur-md docked full-width top-0 border-b border-primary/10 z-50 sticky">
+<div class="flex justify-between items-center h-20 px-margin-desktop max-w-container-max mx-auto w-full">
+<div class="font-headline-md text-headline-md font-bold text-primary flex items-center gap-2">
+<span class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white text-xs">MH</span>
+            ModernHearth
+        </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="#">Our Homes</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="#">Community</a>
+<a class="font-label-md text-label-md text-primary border-b-2 border-accent-coral pb-1" href="#">Governance</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-on-primary px-6 py-3 font-label-md rounded hover:opacity-90 transition-all shadow-sm">
+                Resident Portal
+            </button>
+</div>
+</div>
+</nav>
+<main class="max-w-container-max mx-auto px-margin-desktop py-16">
+<!-- Hero Section -->
+<header class="mb-20">
+<div class="max-w-3xl">
+<span class="font-label-md text-label-md text-accent-coral uppercase tracking-widest mb-4 block font-bold">Trust &amp; Accountability</span>
+<h1 class="font-headline-xl text-headline-xl text-primary mb-6 tracking-tight">Governance &amp; Transparency</h1>
+<p class="text-lg text-secondary leading-relaxed">
+                ModernHearth is founded on the principle of communal ownership. We maintain the highest standards of transparency in our financial reporting, democratic processes, and administrative decisions.
+            </p>
+</div>
+</header>
+<!-- Governance Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-20">
+<!-- Financial Overview (Large Column) -->
+<section class="md:col-span-8 tonal-layer-1 p-10 smooth-shadow accent-border-top rounded-lg">
+<div class="flex justify-between items-start mb-8">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary mb-2">Financial Overview</h2>
+<p class="font-body-md text-secondary">Q3 2024 Operating Budget &amp; Reserves</p>
+</div>
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="account_balance_wallet">account_balance_wallet</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-10">
+<div class="border-l-2 border-accent-coral pl-4">
+<span class="text-xs font-bold text-secondary uppercase tracking-wider">Operational Fund</span>
+<div class="text-2xl font-bold text-primary mt-1">$1,240,000</div>
+</div>
+<div class="border-l-2 border-outline-variant pl-4">
+<span class="text-xs font-bold text-secondary uppercase tracking-wider">Reserve Fund</span>
+<div class="text-2xl font-bold text-primary mt-1">$450,000</div>
+</div>
+<div class="border-l-2 border-outline-variant pl-4">
+<span class="text-xs font-bold text-secondary uppercase tracking-wider">Capital Projects</span>
+<div class="text-2xl font-bold text-primary mt-1">$180,000</div>
+</div>
+</div>
+<div class="space-y-6">
+<div class="flex justify-between items-center py-4 border-b border-outline-variant hover:bg-surface-container-low transition-colors px-2 -mx-2 rounded">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary" data-icon="description">description</span>
+<div>
+<p class="font-label-md text-primary">Annual Audit Report 2023</p>
+<p class="text-xs text-secondary">Verified by Hearthstone Accountants</p>
+</div>
+</div>
+<button class="text-accent-coral hover:text-primary font-bold text-sm transition-colors">Download PDF</button>
+</div>
+<div class="flex justify-between items-center py-4 border-b border-outline-variant hover:bg-surface-container-low transition-colors px-2 -mx-2 rounded">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary" data-icon="bar_chart">bar_chart</span>
+<div>
+<p class="font-label-md text-primary">Monthly Expense Summary - Sep 2024</p>
+<p class="text-xs text-secondary">Community Maintenance &amp; Utilities</p>
+</div>
+</div>
+<button class="text-accent-coral hover:text-primary font-bold text-sm transition-colors">View Report</button>
+</div>
+</div>
+</section>
+<!-- Quick Links / Bylaws (Smaller Column) -->
+<section class="md:col-span-4 tonal-layer-1 p-10 smooth-shadow flex flex-col justify-between rounded-lg">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary mb-8">Bylaws &amp; Documents</h2>
+<ul class="space-y-8">
+<li class="group cursor-pointer">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-accent-coral" data-icon="gavel">gavel</span>
+<span class="font-label-md group-hover:text-primary transition-colors text-primary font-semibold">Society Bylaws</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-accent-coral transition-colors" data-icon="open_in_new">open_in_new</span>
+</div>
+<p class="text-xs text-secondary mt-1 ml-9">Latest update: Jan 2024</p>
+</li>
+<li class="group cursor-pointer">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-accent-coral" data-icon="rule">rule</span>
+<span class="font-label-md group-hover:text-primary transition-colors text-primary font-semibold">Code of Conduct</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-accent-coral transition-colors" data-icon="open_in_new">open_in_new</span>
+</div>
+<p class="text-xs text-secondary mt-1 ml-9">Member standards of living</p>
+</li>
+<li class="group cursor-pointer">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-accent-coral" data-icon="history_edu">history_edu</span>
+<span class="font-label-md group-hover:text-primary transition-colors text-primary font-semibold">Articles of Incorporation</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-accent-coral transition-colors" data-icon="open_in_new">open_in_new</span>
+</div>
+<p class="text-xs text-secondary mt-1 ml-9">Foundational legal structure</p>
+</li>
+</ul>
+</div>
+<div class="mt-10 p-6 bg-primary text-white rounded">
+<p class="text-xs font-bold uppercase mb-2 opacity-80">Transparency Hotline</p>
+<p class="text-base font-bold">governance@modernhearth.com</p>
+</div>
+</section>
+</div>
+<!-- The Board Section -->
+<section class="mb-20">
+<div class="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
+<div class="max-w-xl">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">The Board of Directors</h2>
+<p class="font-body-md text-secondary">Elected representatives responsible for the strategic direction and fiduciary oversight of the cooperative society.</p>
+</div>
+<button class="border-2 border-primary text-primary px-8 py-3 font-bold hover:bg-primary hover:text-on-primary transition-all rounded">
+                Nomination Process
+            </button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Board Member 1 -->
+<div class="group bg-primary p-6 rounded-lg shadow-lg hover:-translate-y-1 transition-all">
+<div class="aspect-[4/5] overflow-hidden rounded mb-4 grayscale hover:grayscale-0 transition-all duration-500 bg-white">
+<img class="w-full h-full object-cover" data-alt="Professional studio portrait of Elena Vance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAebn0rItPFTV8t2gX0iYv8hM_D8uvGQfsAaqLdNniBgCjpm7nAeY9OXZBIbwVi3u6oG9rAmUyHXkX7T8vw8h8X1LRSfyxOU3gLolDr06Jed3IwILzjAinW7VIdcUtpuDOU-bS4Wlq_0o1LYS8HB5fWKGCU50-chr1om97z-giXO0NwiWqNtTlHtBj5tAr-SN9h7rJL2W6b6qNG2RgjfhhIGBGns8XZufu9PEa4qredn5-4fcSdEEq5hA"/>
+</div>
+<h3 class="font-bold text-lg text-white">Dr. Elena Vance</h3>
+<p class="text-sm font-bold text-accent-coral mb-2">Chairwoman</p>
+<p class="text-xs text-white/70">Tenure: 2022 — 2025</p>
+</div>
+<!-- Board Member 2 -->
+<div class="group bg-primary p-6 rounded-lg shadow-lg hover:-translate-y-1 transition-all">
+<div class="aspect-[4/5] overflow-hidden rounded mb-4 grayscale hover:grayscale-0 transition-all duration-500 bg-white">
+<img class="w-full h-full object-cover" data-alt="Professional portrait of Marcus Thorne" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDou8ROLYNkWCFEmxFoedMRVaZei74O-gwSTB9z-1nL1Br0jDTAOVvT-d1MjfL28PxT8UKymk_3IaMLh59vtv_ntwvNxIVXsuXXXfO6IrDZAd-2nR2gag556Mdn488h5UswzXymDEg2nSjd7d4cBt7OJf-drwoxZTbHKE12IQ3xkw1UmL6mUFeCDEy4PmwRREtFr3sGAgxapbGDA-lRxUHJRYMcOT_a04s-MI6wmz_-PtKHRSD-4d3XAA"/>
+</div>
+<h3 class="font-bold text-lg text-white">Marcus Thorne</h3>
+<p class="text-sm font-bold text-accent-coral mb-2">Treasurer</p>
+<p class="text-xs text-white/70">Tenure: 2023 — 2026</p>
+</div>
+<!-- Board Member 3 -->
+<div class="group bg-primary p-6 rounded-lg shadow-lg hover:-translate-y-1 transition-all">
+<div class="aspect-[4/5] overflow-hidden rounded mb-4 grayscale hover:grayscale-0 transition-all duration-500 bg-white">
+<img class="w-full h-full object-cover" data-alt="Professional portrait of Sarah Jenkins" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwUNqCgTYQo652jn4vZTTNcQaTp8kCL8O7xzlrohIXjdPtyJziDiyH-CnP8o2_jA6HP1cNX_LAfNf2_p4qJ99j2BVHiBdzAI96svn_4NvE2N8nFM6xrDQScP20TWcbQmkWtzxNcVn2malKOsZygkFlOhTMOClUgF930DVjW4pOWYSvVzhfPUKvZAmAzfRgwUM3ShS8ZYDOIkFwStvXxAt4hrXIqlSooaaRJh6fV-0kQ2C_-K01fjWIXg"/>
+</div>
+<h3 class="font-bold text-lg text-white">Sarah Jenkins</h3>
+<p class="text-sm font-bold text-accent-coral mb-2">Secretary</p>
+<p class="text-xs text-white/70">Tenure: 2021 — 2024</p>
+</div>
+<!-- Board Member 4 -->
+<div class="group bg-primary p-6 rounded-lg shadow-lg hover:-translate-y-1 transition-all">
+<div class="aspect-[4/5] overflow-hidden rounded mb-4 grayscale hover:grayscale-0 transition-all duration-500 bg-white">
+<img class="w-full h-full object-cover" data-alt="Professional portrait of Julian Reed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnGMj1fXgddN7YxUZ18AbW2vng_Ge0V0d1wvmdmYV6NxVwqheqehdyScrfK4E9hFRTp3n5-mniEAvSRHetgfUBsXcSrYwhu4Ig5Gcl1x1WIVDRS5eX5rwqao57KDeDrAumeLOGeLnxVoqMH21Kk2N3uQH_ucSiRA_n5oU7QXGUulHSe_VK0uaqYiouAcXDOPNybWB4HfWV5W5jJIoszGDqT3_UZ47MMM7n-7Z9vh0G-k3FH4PyStsmPQ"/>
+</div>
+<h3 class="font-bold text-lg text-white">Julian Reed</h3>
+<p class="text-sm font-bold text-accent-coral mb-2">Operations Liaison</p>
+<p class="text-xs text-white/70">Tenure: 2024 — 2027</p>
+</div>
+</div>
+</section>
+<!-- Meeting Minutes & Archive -->
+<section class="tonal-layer-1 p-10 md:p-16 mb-20 bg-surface-container-lowest rounded-lg accent-border-top">
+<div class="flex items-center gap-4 mb-10">
+<span class="material-symbols-outlined text-accent-coral text-4xl" data-icon="forum">forum</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Meeting Minutes</h2>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b-2 border-primary/10">
+<th class="py-4 font-bold text-xs text-secondary uppercase tracking-wider">Date</th>
+<th class="py-4 font-bold text-xs text-secondary uppercase tracking-wider">Session Type</th>
+<th class="py-4 font-bold text-xs text-secondary uppercase tracking-wider">Status</th>
+<th class="py-4 font-bold text-xs text-secondary uppercase tracking-wider text-right">Documents</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/30">
+<tr class="hover:bg-primary/5 transition-colors cursor-pointer group">
+<td class="py-6 font-bold text-primary">Oct 12, 2024</td>
+<td class="py-6">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-accent-coral"></span>
+<span class="text-secondary font-medium">General Board Meeting</span>
+</div>
+</td>
+<td class="py-6">
+<span class="bg-primary/10 text-primary text-xs px-3 py-1 font-bold rounded">Approved</span>
+</td>
+<td class="py-6 text-right">
+<button class="flex items-center gap-2 ml-auto text-accent-coral opacity-0 group-hover:opacity-100 transition-opacity font-bold text-sm">
+<span class="material-symbols-outlined text-sm" data-icon="download">download</span>
+<span>PDF Archive</span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors cursor-pointer group">
+<td class="py-6 font-bold text-primary">Sep 15, 2024</td>
+<td class="py-6">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary/50"></span>
+<span class="text-secondary font-medium">Budget Review Session</span>
+</div>
+</td>
+<td class="py-6">
+<span class="bg-primary/10 text-primary text-xs px-3 py-1 font-bold rounded">Approved</span>
+</td>
+<td class="py-6 text-right">
+<button class="flex items-center gap-2 ml-auto text-accent-coral opacity-0 group-hover:opacity-100 transition-opacity font-bold text-sm">
+<span class="material-symbols-outlined text-sm" data-icon="download">download</span>
+<span>PDF Archive</span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors cursor-pointer group">
+<td class="py-6 font-bold text-primary">Aug 28, 2024</td>
+<td class="py-6">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-accent-coral"></span>
+<span class="text-secondary font-medium">Quarterly Member Assembly</span>
+</div>
+</td>
+<td class="py-6">
+<span class="bg-primary/10 text-primary text-xs px-3 py-1 font-bold rounded">Approved</span>
+</td>
+<td class="py-6 text-right">
+<button class="flex items-center gap-2 ml-auto text-accent-coral opacity-0 group-hover:opacity-100 transition-opacity font-bold text-sm">
+<span class="material-symbols-outlined text-sm" data-icon="download">download</span>
+<span>PDF Archive</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mt-10 flex justify-center">
+<button class="text-secondary font-bold hover:text-accent-coral transition-colors flex items-center gap-2">
+                View Full Archive (2020 — 2024)
+                <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-white">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter py-16 px-margin-desktop max-w-container-max mx-auto w-full">
+<div class="flex flex-col gap-6">
+<div class="font-headline-md text-headline-md font-bold text-white flex items-center gap-2">
+<span class="w-8 h-8 bg-accent-coral rounded-full flex items-center justify-center text-white text-xs">MH</span>
+                ModernHearth
+            </div>
+<p class="text-white/70 font-body-md max-w-xs leading-relaxed">
+                Elevating the standards of communal living through architectural excellence and democratic transparency.
+            </p>
+</div>
+<div class="flex flex-col gap-6">
+<h4 class="text-xs font-bold text-accent-coral uppercase tracking-widest">Governance</h4>
+<nav class="flex flex-col gap-3">
+<a class="text-white/70 hover:text-white transition-colors" href="#">Membership</a>
+<a class="text-white/70 hover:text-white transition-colors" href="#">Bylaws</a>
+<a class="text-white/70 hover:text-white transition-colors" href="#">Election Rules</a>
+<a class="text-white/70 hover:text-white transition-colors" href="#">Whistleblower Policy</a>
+</nav>
+</div>
+<div class="flex flex-col gap-6">
+<h4 class="text-xs font-bold text-accent-coral uppercase tracking-widest">Legal</h4>
+<nav class="flex flex-col gap-3">
+<a class="text-white/70 hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="text-white/70 hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="text-white/70 hover:text-white transition-colors" href="#">Cookie Settings</a>
+</nav>
+</div>
+</div>
+<div class="border-t border-white/10 px-margin-desktop max-w-container-max mx-auto py-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-xs text-white/50">© 2024 ModernHearth Cooperative Society. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-white/50 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined text-xl" data-icon="language">language</span></a>
+<a class="text-white/50 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined text-xl" data-icon="public">public</span></a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    // Subtle micro-interaction for document hover
+    document.querySelectorAll('tr').forEach(row => {
+        row.addEventListener('mouseenter', () => {
+            row.style.transform = 'translateX(4px)';
+            row.style.transition = 'transform 0.2s ease-out';
+        });
+        row.addEventListener('mouseleave', () => {
+            row.style.transform = 'translateX(0)';
+        });
+    });
+</script>
+</body></html>
