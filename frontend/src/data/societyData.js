@@ -25,7 +25,7 @@ export const companyInfo = {
   established: 2005,
   email: "info@mjpaccountingservices.com",
   phones: ["+91 99875 95939", "+91 99875 95940"],
-  address: "Lower Ground 37 & 38, Xth Central Mall, Next to D-Mart, Mahavir Nagar, Kandivali West, Mumbai, Maharashtra 400067",
+  address: "Lower Ground 37 & 38,Tenth Central Mall, Next to D-Mart, Mahavir Nagar, Kandivali West, Mumbai, Maharashtra 400067",
   officeHours: "Monday to Saturday: 10:00 AM - 7:00 PM (Sunday Closed)",
   tagline: "Professional Co-operative Society Accounting & Management since 2005",
   about: "Since 2005, we have been dedicated to providing professional services to Cooperative Societies across a wide range of sectors, including Housing, Industrial, and Credit Societies. Our expertise covers society accounting, maintenance of statutory records, recovery proceedings under Section 154, committee election procedures, society registration, and overall society management. With years of experience and a commitment to accuracy and compliance, we help societies operate smoothly while meeting all statutory and regulatory requirements.",

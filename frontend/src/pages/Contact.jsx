@@ -385,7 +385,7 @@ Submitted via MJP Portfolio Portal`;
                   <span className="text-[10px] font-bold uppercase tracking-widest bg-tertiary px-2 py-0.5 rounded text-white inline-block">
                     Office Premises
                   </span>
-                  <p className="text-xs font-bold leading-tight">Lower Ground 37/38, Xth Central Mall</p>
+                  <p className="text-xs font-bold leading-tight">Lower Ground 37/38,Tenth Central Mall</p>
                   <p className="text-[10px] text-white/80">Kandivali (W), Mahavir Nagar, Mumbai</p>
                 </div>
               </div>
@@ -439,7 +439,7 @@ Submitted via MJP Portfolio Portal`;
                     <div>
                       <h3 className="text-xl font-bold text-primary">MJP Society Accounts &amp; Consultancy</h3>
                       <p className="text-xs text-secondary mt-1">
-                        Lower Ground 37/38, Xth Central Mall, next to DMart, Kandivali (W), Mahavir Nagar, Mumbai 400067
+                        Lower Ground 37/38,Tenth Central Mall, next to DMart, Kandivali (W), Mahavir Nagar, Mumbai 400067
                       </p>
                     </div>
                     <span className="text-xs font-bold text-tertiary bg-tertiary/10 px-3 py-1 rounded-full uppercase tracking-wider">
