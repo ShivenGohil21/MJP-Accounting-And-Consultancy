@@ -401,11 +401,11 @@ export default function Home() {
                   <span className="px-2.5 py-1 bg-tertiary-light text-tertiary text-xs font-bold uppercase rounded mb-2 inline-block">
                     Audit Circular
                   </span>
-                  <h4 className="text-lg font-bold text-primary">Statutory Register ('I' &amp; 'J') Checklist</h4>
-                  <p className="text-sm text-secondary mt-1">Complete mandatory fields required for Co-operative Housing Society audit verification.</p>
+                  <h4 className="text-lg font-bold text-primary">Statutory Audit &amp; Compliance</h4>
+                  <p className="text-sm text-secondary mt-1">Audit of Society records and statutory documents in accordance with the Maharashtra Co-operative Societies Act, Rules, and applicable regulatory requirements.</p>
                 </div>
-                <div className="mt-4 md:mt-0 flex items-center gap-2 text-xs font-semibold text-tertiary">
-                  <span>Audit Guidelines</span>
+                <div className="mt-4 md:mt-0 flex items-center gap-2 text-xs font-semibold text-tertiary shrink-0 ml-4">
+                  <span>Audit &amp; Statutory Compliance Guidelines</span>
                 </div>
               </div>
             </div>
