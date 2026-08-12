@@ -70,7 +70,7 @@ export default function Governance() {
             <div className="flex justify-between items-start">
               <div>
                 <h2 className="text-2xl font-bold text-primary">Bye-laws Adoption / Amendment</h2>
-                <p className="text-xs text-secondary mt-1">Filing Guidelines &amp; Registrar Submissions</p>
+                <p className="text-xs text-secondary mt-1">Adoption, Amendment &amp; Ongoing Compliance with Society Bye-laws in accordance with applicable laws, rules, and regulatory requirements.</p>
               </div>
               <Scale size={28} className="text-tertiary" />
             </div>

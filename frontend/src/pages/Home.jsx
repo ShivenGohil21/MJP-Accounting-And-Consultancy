@@ -373,7 +373,7 @@ export default function Home() {
           <div className="lg:col-span-1">
             <h2 className="text-3xl font-bold text-primary mb-6">Governance Transparency</h2>
             <p className="text-secondary leading-relaxed mb-8">
-              MJP SocietyAccounts & Consultancy operates on a model of total regulatory compliance. Managing committees receive complete documentation prior to annual statutory audits.
+              MJP Society Accounts & Consultancy operates on a model of total regulatory compliance. Managing committees receive complete documentation prior to annual statutory audits.
             </p>
             <Link to="/governance" className="flex items-center gap-2 text-tertiary font-bold text-sm group">
               View Governance Standards
@@ -389,7 +389,7 @@ export default function Home() {
                     Statutory Rule
                   </span>
                   <h4 className="text-lg font-bold text-primary">MCS Bye-law 2014 Adoption Guidelines</h4>
-                  <p className="text-sm text-secondary mt-1">Procedure for passing Special General Body resolution and submitting Appendix A.</p>
+                  <p className="text-sm text-secondary mt-1">Adoption, Amendment &amp; Compliance with Society Bye-laws in accordance with applicable laws, rules, and regulatory requirements.</p>
                 </div>
                 <div className="mt-4 md:mt-0 flex items-center gap-2 text-xs font-semibold text-tertiary">
                   <span>Adoption Compliance</span>

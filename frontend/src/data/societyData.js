@@ -102,7 +102,7 @@ export const services = [
   {
     id: "bye-laws",
     title: "Bye-laws Adoption / Amendment",
-    shortDesc: "Review, adoption, amendment, and filing of Model Bye-laws of the Co-operative Housing Society Ltd.",
+    shortDesc: "Adoption, Amendment & Ongoing Compliance with Society Bye-laws in accordance with applicable laws, rules, and regulatory requirements.",
     icon: "gavel",
     details: [
       "Preparation of notice, agenda, resolution & minutes.",
