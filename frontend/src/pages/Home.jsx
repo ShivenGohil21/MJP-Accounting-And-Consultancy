@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Landmark, ArrowRight, ShieldCheck, Activity, Download, ArrowUpRight, Users, Building, Maximize2, X, MapPin } from "lucide-react";
 import { stats, clientSocieties, companyInfo } from "../data/societyData";
+import mjpOfficePhoto from "../assets/MJP-Photo.png";
 
 export default function Home() {
   const [showOfficeModal, setShowOfficeModal] = useState(false);
@@ -50,7 +51,7 @@ export default function Home() {
                 onClick={() => setShowOfficeModal(true)}
               >
                 <img
-                  src="/SocietyPhoto/MJP-Photo.png"
+                  src={mjpOfficePhoto}
                   alt="MJP Society Accounts & Consultancy Main Office"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
@@ -442,7 +443,7 @@ export default function Home() {
           >
             <div className="relative bg-slate-900 flex items-center justify-center min-h-[350px] max-h-[75vh]">
               <img
-                src="/SocietyPhoto/MJP-Photo.png"
+                src={mjpOfficePhoto}
                 alt="MJP Society Accounts & Consultancy Main Office Premises"
                 className="max-h-[75vh] w-full object-contain"
               />

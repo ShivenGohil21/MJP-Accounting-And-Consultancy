@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { MapPin, Phone, Mail, Clock, ChevronDown, ChevronUp, MailCheck, X } from "lucide-react";
 import { companyInfo, faqs } from "../data/societyData";
 import CustomSelect from "../components/UI/CustomSelect";
+import mjpOfficePhoto from "../assets/MJP-Photo.png";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -370,7 +371,7 @@ Submitted via MJP Portfolio Portal`;
                 onClick={() => setShowOfficeModal(true)}
               >
                 <img
-                  src="/SocietyPhoto/MJP-Photo.png"
+                  src={mjpOfficePhoto}
                   alt="MJP Society Accounts Consultancy Administrative Office Premises"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
@@ -418,7 +419,7 @@ Submitted via MJP Portfolio Portal`;
                 >
                   <div className="relative bg-slate-900 flex items-center justify-center min-h-[350px] max-h-[75vh]">
                     <img
-                      src="/SocietyPhoto/MJP-Photo.png"
+                      src={mjpOfficePhoto}
                       alt="MJP Society Accounts Consultancy Main Office Premises"
                       className="max-h-[75vh] w-full object-contain"
                     />
