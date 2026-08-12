@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { Calculator, FileText, Scale, Globe, FileCode, CheckCircle2, ShieldAlert, Gavel, Landmark, Construction, BarChart3 } from "lucide-react";
+import { Calculator, FileText, Scale, Globe, FileCode, CheckCircle2, ShieldAlert, Gavel, Landmark, Construction, BarChart3, Vote } from "lucide-react";
 import { services, companyInfo } from "../data/societyData";
 
 export default function Services() {
@@ -30,6 +30,8 @@ export default function Services() {
         return <Globe className="text-primary" size={24} />;
       case "analytics":
         return <BarChart3 className="text-primary" size={24} />;
+      case "election":
+        return <Vote className="text-primary" size={24} />;
       case "recovery":
         return <ShieldAlert className="text-primary" size={24} />;
       case "conveyance":

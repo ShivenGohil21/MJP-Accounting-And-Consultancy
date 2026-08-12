@@ -373,7 +373,7 @@ export default function Home() {
           <div className="lg:col-span-1">
             <h2 className="text-3xl font-bold text-primary mb-6">Governance Transparency</h2>
             <p className="text-secondary leading-relaxed mb-8">
-              MJP Consultancy operates on a model of total regulatory compliance. Managing committees receive complete documentation prior to annual statutory audits.
+              MJP SocietyAccounts & Consultancy operates on a model of total regulatory compliance. Managing committees receive complete documentation prior to annual statutory audits.
             </p>
             <Link to="/governance" className="flex items-center gap-2 text-tertiary font-bold text-sm group">
               View Governance Standards

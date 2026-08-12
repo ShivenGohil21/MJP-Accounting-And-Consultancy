@@ -105,7 +105,6 @@ export const services = [
     shortDesc: "Review, adoption, amendment, and filing of Model Bye-laws of the Co-operative Housing Society Ltd.",
     icon: "gavel",
     details: [
-      "Assistance for adoption/amendment of applicable Bye-laws.",
       "Preparation of notice, agenda, resolution & minutes.",
       "Registrar/Deputy Registrar submission and follow-up, wherever required.",
       "Guidance to the Committee for implementation of Bye-laws."
@@ -122,17 +121,27 @@ export const services = [
     ]
   },
   {
-    id: "compliance",
-    title: "Tax, Audit & Election Assistance",
-    shortDesc: "Statutory filing of income tax returns, TDS, GST returns, and election documentation support.",
+    id: "tax-audit",
+    title: "Tax & Statutory Audit Assistance",
+    shortDesc: "Statutory filing of income tax returns (ITR), TDS, GST returns, and audit process coordination.",
     icon: "analytics",
     details: [
       "Filing of annual Income Tax Returns (ITR).",
       "GST Return Filing services (monthly compilation).",
       "TDS Return Filing compliance (quarterly compilation).",
-      "Assisting societies with Managing Committee Election Procedures in accordance with state Election Rules.",
       "Coordination of statutory auditing processes.",
       "Note: The firm maintains neutral auditing integrity and does not attend General Body Meetings (AGM/SGM) directly."
+    ]
+  },
+  {
+    id: "election-assistance",
+    title: "Managing Committee Election Assistance",
+    shortDesc: "Returning Officer services and complete election process execution as per MCS Election Rules 2014.",
+    icon: "election",
+    details: [
+      "Returning Officer services for Co-operative Societies as per Maharashtra Co-operative Societies (Election) Rules, 2014.",
+      "Complete election process including voter list, nominations, scrutiny, voting, counting and declaration of results.",
+      "Election documentation and compliance as prescribed under the applicable Co-operative Rules & Regulations."
     ]
   },
   {
