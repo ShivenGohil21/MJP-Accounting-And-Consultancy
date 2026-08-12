@@ -51,25 +51,30 @@ export default function Contact() {
     setSubmitting(true);
     setShowSuccessModal(false);
 
-    try {
-      const data = new FormData();
-      data.append("_subject", `New Society Proposal Request: ${formData.society || formData.name} - MJP Accounts`);
-      data.append("_template", "table");
-      data.append("_captcha", "false");
-      data.append("Contact Person Name", formData.name);
-      data.append("Email Address", formData.email);
-      data.append("Phone Number", formData.phone || "N/A");
-      data.append("Society Name", formData.society);
-      data.append("Total Members / Units", formData.members);
-      data.append("Required Service", formData.serviceType);
-      data.append("Message / Specific Requirements", formData.message || "No additional notes provided.");
+    const subject = `Proposal Request: ${formData.society || formData.name} - MJP Accounts`;
 
+    const payload = {
+      _subject: subject,
+      _template: "table",
+      _captcha: "false",
+      _replyto: formData.email,
+      "Contact Person Name": formData.name,
+      "Email Address": formData.email,
+      "Phone Number": formData.phone || "N/A",
+      "Society Name": formData.society,
+      "Total Members / Units": formData.members,
+      "Required Service": formData.serviceType,
+      "Message / Specific Requirements": formData.message || "No additional notes provided."
+    };
+
+    try {
       const response = await fetch("https://formsubmit.co/ajax/info@mjpaccountingservices.com", {
         method: "POST",
         headers: {
+          "Content-Type": "application/json",
           "Accept": "application/json"
         },
-        body: data
+        body: JSON.stringify(payload)
       });
 
       if (response.ok) {
