@@ -109,7 +109,7 @@ export default function CustomSelect({
             )}
 
             {/* Options List */}
-            <div className="max-h-60 overflow-y-auto p-1.5 space-y-1">
+            <div className="max-h-72 overflow-y-auto p-1.5 space-y-1">
               {filteredOptions.length > 0 ? (
                 filteredOptions.map((opt, idx) => {
                   const isSelected = opt.value === value;
@@ -118,22 +118,22 @@ export default function CustomSelect({
                       key={idx}
                       type="button"
                       onClick={() => handleSelect(opt.value)}
-                      className={`w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm text-left transition-colors duration-150 ${
+                      className={`w-full flex items-start justify-between px-3.5 py-3 rounded-lg text-sm text-left transition-colors duration-150 ${
                         isSelected
-                          ? "bg-tertiary-light/60 text-tertiary font-bold"
-                          : "text-primary hover:bg-surface-container-low hover:text-tertiary"
+                          ? "bg-tertiary/10 text-tertiary font-bold"
+                          : "text-primary hover:bg-tertiary/10 hover:text-tertiary"
                       }`}
                     >
-                      <div className="flex flex-col">
-                        <span className="truncate">{opt.label}</span>
+                      <div className="flex flex-col pr-2 flex-1">
+                        <span className="text-sm leading-snug break-words">{opt.label}</span>
                         {opt.subtext && (
-                          <span className="text-xs text-secondary font-normal">
+                          <span className="text-xs text-secondary font-normal mt-0.5">
                             {opt.subtext}
                           </span>
                         )}
                       </div>
                       {isSelected && (
-                        <Check size={16} className="text-tertiary shrink-0 ml-2" />
+                        <Check size={18} className="text-tertiary shrink-0 mt-0.5 ml-2" />
                       )}
                     </button>
                   );
